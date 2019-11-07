@@ -207,8 +207,7 @@ h4 {
 .read-more {
   display: grid;
   grid-template-columns: 1fr repeat(3, minmax(220px, 380px)) 1fr;
-  padding-bottom: 30px;
-  border-bottom: 1px solid #e2e2e2;
+  padding-bottom: 10px;
 }
 
 .article-preview:nth-child(2) {
@@ -266,7 +265,50 @@ h4 {
   font-size: 0.88rem;
 }
 
+.sign-up {
+  margin: auto;
+  display: grid;
+  grid-auto-flow: row;
+  justify-items: center;
+  grid-gap: 20px;
+  padding-bottom: 100px;
+  max-width: 1140px;
+  border-top: 1px solid #e2e2e2;
+  border-bottom: 4px double #e2e2e2;
+}
+
+.sign-up h4 {
+  font-size: 1.4rem;
+  font-family: nyt-cheltenham, Georgia, 'Times New Roman', Times, serif;
+  line-height: 145%;
+}
+
+.sign-up button {
+  width: 240px;
+  border-radius: 3px;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 20px;
+  background-color: rgb(51,51,51);
+  color: white;
+  padding: 10px;
+}
+
+.sign-up span {
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  color: rgb(51,51,51);
+}
+
+.sign-up span a {
+  font-weight: 700;
+  color: rgb(51,51,51);
+}
+
 .links {
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: grid;
   grid-template-columns: 1fr repeat(6, minmax(110px, 190px)) 1fr;
 }
@@ -286,7 +328,7 @@ h4 {
   line-height: 11px;
   text-decoration: none;
   justify-self: right;
-  align-self: end;
+  align-self: center;
 }
 
 .column-first {
@@ -317,6 +359,12 @@ h4 {
   height: 25px;
 }
 
+.column-last ul .link-sm a {
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 21px;
+}
+
 .links-column ul li a {
   color: rgb(0,0,0);
   font-family: nyt-franklin, helvetica, arial, sans-serif;
@@ -324,3 +372,96 @@ h4 {
   font-size: 14px;
   font-weight: 500;
 }
+
+.link-lg a span {
+  color: black;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.link-lg svg {
+  display: inline-block;
+  height: 13px;
+  width: 13px;
+  margin-right: 7px;
+  vertical-align: middle;
+}
+
+.column-last ul li:nth-child(8) {
+  padding-top: 15px;
+  border-top: 1px solid #e2e2e2;
+}
+
+.column-last ul {
+  display: grid;
+  grid-gap: 3px;
+  align-content: space-between;
+}
+
+footer {
+  font-size: 11px;
+  max-width: 1200px;
+  border-top: 1px solid #eaeaea;
+  padding-bottom: 10px;
+}
+
+footer nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+footer >* li {
+  padding: 0 10px;
+}
+
+footer >* a {
+  color:rgb(153, 153, 153);
+  text-decoration: none;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+}
+
+.footer-fixed {
+  background: white;
+  height: 55px;
+  position: sticky;
+  bottom: 0px;
+  border-top: 1px solid rgb(51,51,51);
+  display: grid;
+  grid-template-columns: 2fr 4fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.footer-signup {
+  grid-column: 2 / span 1;
+  font-size: 15px;
+  color: black;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+}
+
+.footer-fixed-link {
+  text-decoration: none;
+}
+
+.expand {
+  grid-column: 3 / span 1;
+  justify-self: right;
+  color: black;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+}
+
+.footer-fixed button {
+  margin-top: 15px;
+  grid-column: 4 / span 1;
+  height: 15px;
+  width: 15px;
+  transform: rotate(-90deg);
+  background-color: transparent;
+  border: none;
+}
+
