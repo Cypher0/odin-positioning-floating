@@ -1,3 +1,5 @@
+/* Header */
+
 .header-main {
   display: grid;
   position: sticky;
@@ -68,6 +70,8 @@
 .logo img {
   width: 255px;
 }
+
+/* Article */
 
 article {
   margin-top: 50px;
@@ -197,6 +201,8 @@ article p {
   align-self: center;
 }
 
+/* 'Read More' section */
+
 h4 {
   text-align: center;
   padding-top: 40px;
@@ -265,6 +271,8 @@ h4 {
   font-size: 0.88rem;
 }
 
+/* Sign Up cta */
+
 .sign-up {
   margin: auto;
   display: grid;
@@ -305,6 +313,8 @@ h4 {
   font-weight: 700;
   color: rgb(51,51,51);
 }
+
+/* Bottom links */
 
 .links {
   padding-top: 10px;
@@ -399,6 +409,8 @@ h4 {
   align-content: space-between;
 }
 
+/* Footer */
+
 footer {
   font-size: 11px;
   max-width: 1200px;
@@ -464,4 +476,3 @@ footer >* a {
   background-color: transparent;
   border: none;
 }
-
